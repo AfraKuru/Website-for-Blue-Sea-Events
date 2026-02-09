@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Services | Blue Sea Events</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="beige-page">
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="logo-link">
+      <img src="bluesea.png" alt="Blue Sea Events Logo" class="logo">
+    </a>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="booking.html">Book</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Services Section -->
+  <section class="services-page">
+
+    <h1>Our Services</h1>
+    <p class="services-subtitle">
+      Thoughtfully designed celebrations, tailored to your vision.
+    </p>
+
+    <div class="services-grid">
+
+      <!-- Weddings -->
+      <div class="service-card" onclick="openModal('weddings-modal')">
+        <h3>Weddings</h3>
+        <p>
+          Elegant, stress-free wedding planning crafted with intention,
+          beauty, and seamless execution from start to finish.
+        </p>
+      </div>
+
+      <!-- Baby Showers -->
+      <div class="service-card" onclick="openModal('baby-modal')">
+        <h3>Baby Showers</h3>
+        <p>
+          Soft, joyful celebrations designed to welcome new beginnings
+          with warmth, creativity, and thoughtful details.
+        </p>
+      </div>
+
+      <!-- Birthdays -->
+      <div class="service-card" onclick="openModal('birthday-modal')">
+        <h3>Birthdays & Parties</h3>
+        <p>
+          Fun, creative celebrations for every milestone — styled to
+          feel personal, elevated, and unforgettable.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WEDDINGS MODAL -->
+  <div class="modal" id="weddings-modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('weddings-modal')">&times;</span>
+      <h2>Weddings</h2>
+      <div class="modal-gallery">
+        <div class="placeholder">Wedding Photo</div>
+        <div class="placeholder">Wedding Photo</div>
+        <div class="placeholder">Wedding Photo</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BABY SHOWER MODAL -->
+  <div class="modal" id="baby-modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('baby-modal')">&times;</span>
+      <h2>Baby Showers</h2>
+      <div class="modal-gallery">
+        <div class="placeholder">Baby Shower Photo</div>
+        <div class="placeholder">Baby Shower Photo</div>
+        <div class="placeholder">Baby Shower Photo</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BIRTHDAY MODAL -->
+  <div class="modal" id="birthday-modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('birthday-modal')">&times;</span>
+      <h2>Birthdays & Parties</h2>
+      <div class="modal-gallery">
+        <div class="placeholder">Birthday Photo</div>
+        <div class="placeholder">Birthday Photo</div>
+        <div class="placeholder">Birthday Photo</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Instagram Preview Section -->
+<section class="instagram-preview">
+  <h2>See Our Work</h2>
+  <p>Follow us on Instagram for real events & behind-the-scenes moments.</p>
+
+  <div class="instagram-embed">
+    <blockquote 
+      class="instagram-media" 
+      data-instgrm-permalink="https://www.instagram.com/bluesea_events/"
+      data-instgrm-version="14">
+    </blockquote>
+  </div>
+</section>
+
+<script async src="https://www.instagram.com/embed.js"></script>

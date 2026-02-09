@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dream Events Co.</title>
+    <title>Blue Sea Events Co.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,13 +10,20 @@
 
     <!-- Navigation -->
     <nav>
-        <h1>Dream Events</h1>
+        <h1>
+            <a href="index.html" class="logo-link">
+                <img src="bluesea.png" alt="Blue Sea Events Logo" class="logo">
+            </a>
+
+        </h1>
+
         <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#booking">Book</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="booking.html">Book</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
+
     </nav>
 
     <!-- Hero Section -->
@@ -24,80 +31,36 @@
         <h2>We Plan. You Celebrate.</h2>
         <p>Creating unforgettable moments for every occasion.</p>
 
-        <a href="#booking">
+        <a href="booking.html">
             <button>Book a Consultation</button>
+            <div class="hero-wave"></div>
         </a>
+
     </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-
-        <div class="cards">
-            <div class="card service-card" data-event="Wedding">
-                <h3>Weddings</h3>
-                <p>Elegant, stress-free wedding planning tailored to you.</p>
-            </div>
-
-            <div class="card service-card" data-event="Baby Shower">
-                <h3>Baby Shower</h3>
-                <p>Beautiful celebrations to welcome new beginnings.</p>
-            </div>
-
-            <div class="card service-card" data-event="Birthday / Party">
-                <h3>Birthdays & Parties</h3>
-                <p>Fun, creative celebrations for every milestone.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
+        <!-- About Section -->
     <section id="about">
         <h2>About Us</h2>
         <p>
-            Dream Events Co. is a full-service event planning company dedicated
+            Blue Sea Events Co. is a family owned full-service event planning company dedicated
             to turning your vision into reality. From intimate gatherings to
             large-scale celebrations, we handle every detail so you can relax
-            and enjoy the moment.
+            and enjoy the moment on your special day.
         </p>
     </section>
 
-    <!-- Booking Section -->
-    <section id="booking">
-        <h2>Book a Consultation</h2>
-        <p>Tell us about your event and we’ll get back to you shortly.</p>
 
-        <form class="booking-form">
-            <input type="text" name="name" placeholder="Full Name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
-            <input type="tel" name="phone" placeholder="Phone Number">
 
-            <select name="event_type" required>
-                <option value="">Event Type</option>
-                <option>Wedding</option>
-                <option>Baby Shower</option>
-                <option>Birthday / Party</option>
-                <option>Other</option>
-            </select>
-
-            <input type="date" name="event_date" required>
-
-            <textarea name="message" rows="5" placeholder="Tell us more about your event..."></textarea>
-
-            <button type="submit">Submit Booking Request</button>
-        </form>
-    </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Email: hello@dreamevents.com</p>
-        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@blueseaevents.com</p>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Dream Events Co. All rights reserved.</p>
+        <p>© 2026 Blue Sea Events Co. All rights reserved.</p>
     </footer>
 
     <!-- JavaScript -->

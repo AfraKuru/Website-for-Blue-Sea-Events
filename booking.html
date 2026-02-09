@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book a Consultation | Blue Sea Events</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- NAV -->
+  <nav>
+    <a href="index.html" class="logo-link">
+      <img src="bluesea.png" alt="Blue Sea Events Logo" class="logo">
+    </a>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="booking.html">Book</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+
+<!-- BOOKING WRAPPER -->
+<section class="booking-wrapper">
+
+  <!-- Progress -->
+  <div class="progress">
+    <span class="active">1 Get started</span>
+    <span>2 Basics</span>
+    <span>3 Finish</span>
+  </div>
+
+  <!-- STEP 1 -->
+  <div class="step active">
+    <h1>Welcome! What are you planning?</h1>
+    <p>Tell us a little about your event.</p>
+
+    <div class="option-grid">
+      <button onclick="nextStep()">Wedding</button>
+      <button onclick="nextStep()">Baby Shower</button>
+      <button onclick="nextStep()">Birthday / Party</button>
+      <button onclick="nextStep()">Something else</button>
+    </div>
+  </div>
+
+  <!-- STEP 2 -->
+  <div class="step">
+    <h1>Let’s start with the basics</h1>
+
+    <div class="form-grid">
+      <input type="text" placeholder="First name" />
+      <input type="text" placeholder="Last name" />
+      <input type="email" placeholder="Email address" />
+      <input type="tel" placeholder="Phone number" />
+      <input type="date" />
+    </div>
+
+    <button class="primary-btn" onclick="nextStep()">Next</button>
+  </div>
+
+  <!-- STEP 3 -->
+  <div class="step">
+    <h1>Tell us more</h1>
+
+    <textarea placeholder="Describe your event, vision, guest count, colors, vibe…"></textarea>
+
+    <button class="primary-btn">Submit Booking Request</button>
+  </div>
+
+</section>
+
+<footer class="footer">
+  © 2026 Blue Sea Events Co. All rights reserved.
+</footer>
+
+<script>
+  let currentStep = 0;
+  const steps = document.querySelectorAll(".step");
+  const progress = document.querySelectorAll(".progress span");
+
+  function nextStep() {
+    steps[currentStep].classList.remove("active");
+    progress[currentStep].classList.remove("active");
+
+    currentStep++;
+
+    steps[currentStep].classList.add("active");
+    progress[currentStep].classList.add("active");
+  }
+</script>
+
+</body>
+</html>
