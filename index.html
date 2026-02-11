@@ -5,6 +5,8 @@
     <title>Blue Sea Events Co.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -19,34 +21,115 @@
 
         <ul>
             <li><a href="services.html">Services</a></li>
-            <li><a href="index.html#about">About</a></li>
             <li><a href="booking.html">Book</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
 
     </nav>
 
-    <!-- Hero Section -->
+    <!-- HERO SECTION -->
     <section class="hero">
-        <h2>We Plan. You Celebrate.</h2>
-        <p>Creating unforgettable moments for every occasion.</p>
-
-        <a href="booking.html">
-            <button>Book a Consultation</button>
-            <div class="hero-wave"></div>
-        </a>
-
+        <div class="hero-overlay">
+            <h1>We Plan. You Celebrate.</h1>
+            <p>Thoughtfully designed, beautifully executed events.</p>
+        </div>
     </section>
 
-        <!-- About Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>
-            Blue Sea Events Co. is a family owned full-service event planning company dedicated
-            to turning your vision into reality. From intimate gatherings to
-            large-scale celebrations, we handle every detail so you can relax
-            and enjoy the moment on your special day.
-        </p>
+  <!-- ABOUT US -->
+<section class="about-services-wrapper">
+  <div class="about-block">
+    <p class="section-label">ABOUT US</p>
+    <h2>We want YOU to celebrate.</h2>
+
+    <p>
+      At Blue Sea Events, we believe every celebration should feel effortless,
+      personal, and truly unforgettable. Based in Cumming, Georgia, we proudly
+      serve clients throughout Metro Atlanta, bringing thoughtful design and
+      seamless coordination to events of all kinds.
+    </p>
+
+    <p>
+      Blue Sea Events was founded by a mother with a deep passion for creating
+      meaningful moments, alongside her two daughters who share her love for
+      creativity, detail, and celebration. Together, we are a family-run team
+      dedicated to turning your vision into a beautifully executed experience —
+      so you can relax, be present, and enjoy every moment that matters most.
+    </p>
+  </div>
+
+  <!-- OUR SERVICES -->
+  <div class="services-block">
+    <p class="section-label">OUR SERVICES</p>
+    <h2>Thoughtful planning, seamless execution.</h2>
+
+    <p>
+      At Blue Sea Events, we take a calm, intentional approach to event planning,
+      focusing on clear communication, thoughtful design, and attention to detail
+      every step of the way. Whether you’re planning a wedding, celebration, or
+      intimate gathering, our goal is to make the process feel effortless and
+      enjoyable from start to finish.
+    </p>
+
+    <p>
+      If you have questions or would like to learn more, you’re always welcome to
+      reach out to us directly via email. You can also submit a booking request
+      through our website, and we’ll get back to you through your preferred method
+      of communication within <strong>1–2 business days</strong>.
+    </p>
+
+    <p>
+      To ensure availability and allow ample time for planning, we kindly ask that
+      you contact us at least <strong>one month prior</strong> to your event date.
+      Availability is limited, so early inquiries are encouraged.
+    </p>
+</section>
+
+<div class="cta-full-width">
+  <a href="booking.html" class="primary-btn">
+    Submit a Booking Request
+  </a>
+</div>
+
+
+<script async src="https://www.instagram.com/embed.js"></script>
+
+    <!-- TESTIMONIALS -->
+
+    <section class="testimonials-section">
+        <div class="testimonial-card">
+            <div class="testimonial-slide active">
+                <p class="testimonial-text">
+                    Watching my mom turn her passion into something so meaningful has been incredibly inspiring.
+                    She pours her heart into every event, and seeing how much joy she brings to others makes me
+                    so proud to call her my mom. This isn’t just her work — it’s her dream.
+                </p>
+                <span class="testimonial-author">— Erva O. (Daughter of the Founder)</span>
+            </div>
+
+            <div class="testimonial-slide">
+                <p class="testimonial-text">
+                    “I was blown away by her skill, professionalism, and calm presence throughout the entire process.
+                    Every detail was thoughtfully planned, and our event felt effortless from start to finish.
+                    I could truly enjoy the day knowing everything was in such capable hands.”
+                </p>
+                <span class="testimonial-author">— Zehra A. </span>
+             </div>
+
+            <div class="testimonial-slide">
+                <p class="testimonial-text">
+                    “From our very first conversation, I felt understood and supported.
+                    She listened to our vision and brought it to life more beautifully than we could have imagined.
+                    The care, creativity, and dedication she brings are truly unmatched.”
+                </p>
+                <span class="testimonial-author">— Afra K.</span>
+             </div>
+
+            <div class="testimonial-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            </div>
+        </div>
     </section>
 
 
@@ -65,6 +148,32 @@
 
     <!-- JavaScript -->
     <script src="script.js"></script>
+
+      <!-- Testimonials JavaScript -->
+  <script>
+    const slides = document.querySelectorAll('.testimonial-slide');
+    const dots = document.querySelectorAll('.dot');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+      slides[index].classList.add('active');
+      dots[index].classList.add('active');
+      currentSlide = index;
+    }
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => showSlide(index));
+    });
+
+    setInterval(() => {
+      let nextSlide = (currentSlide + 1) % slides.length;
+      showSlide(nextSlide);
+    }, 6000);
+  </script>
+
+  <script src="testimonials.js"></script>
 
 </body>
 </html>

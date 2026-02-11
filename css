@@ -81,3 +81,195 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+.booking-wrapper {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #cfdfea;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 140px;
+}
+
+.submit-btn {
+  margin-top: 25px;
+  background: #1f3b52;
+  color: white;
+  border: none;
+  padding: 14px 34px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #163041;
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 40px;
+  font-size: 14px;
+  color: #9aa9b5;
+}
+
+.progress .active {
+  color: #1f3b52;
+  font-weight: 600;
+}
+
+.event-options.elegant {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 50px 0 60px;
+}
+
+.event-pill {
+  position: relative;
+}
+
+.event-pill input {
+  display: none;
+}
+
+.event-pill span {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: 1px solid #d6e3ee;
+  background-color: #ffffff;
+  color: #1f3b52;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Hover — subtle elegance */
+.event-pill span:hover {
+  border-color: #1f3b52;
+}
+
+/* Selected */
+.event-pill input:checked + span {
+  background-color: #1f3b52;
+  color: #ffffff;
+  border-color: #1f3b52;
+}
+
+
+.event-card {
+  border: 1px solid #cfdfea;
+  border-radius: 14px;
+  padding: 22px;
+  text-align: center;
+  font-size: 16px;
+  color: #1f3b52;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background: #ffffff;
+}
+
+.event-card input {
+  display: none;
+}
+
+.event-card:hover {
+  border-color: #1f3b52;
+}
+
+.event-card input:checked + span {
+  font-weight: 600;
+}
+
+.event-card input:checked ~ span,
+.event-card input:checked + span {
+  color: #ffffff;
+}
+
+.event-card:has(input:checked) {
+  background: #1f3b52;
+  border-color: #1f3b52;
+}
+
+.progress span {
+  cursor: pointer;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.progress span.active {
+  border-color: #1f3b52;
+}
+
+.progress span:hover {
+  color: #1f3b52;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.step {
+  font-size: 16px;
+  color: #b5b5b5;
+  cursor: pointer;
+}
+
+.step.active {
+  color: #1f3b52;
+  font-weight: 600;
+}
+
+.form-step {
+  display: none;
+  text-align: center;
+}
+
+.form-step.active {
+  display: block;
+}
